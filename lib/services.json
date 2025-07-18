@@ -1,0 +1,46 @@
+[
+  {
+    "icon": "WebDevelopmentIcon",
+    "name": "Web Development",
+    "description": "Websites built with the latest frameworks, fully responsive and fast. We can also help with website maintenance and updates.",
+    "url": "web-development",
+    "idPrefix": "web-development",
+    "iconSrc": "./web-dev-background.svg",
+    "formType": "web-development",
+    "label": "Enquire...",
+    "title": "Web Development"
+  },
+  {
+    "icon": "WebDesignIcon",
+    "name": "Web Design",
+    "description": "How your website looks is important. We can help with the design of your website to make sure it looks great and is easy to use.",
+    "url": "web-design",
+    "idPrefix": "web-design",
+    "iconSrc": "./web-dev-background.svg",
+    "formType": "web-design",
+    "label": "Enquire...",
+    "title": "Web Design"
+  },
+  {
+    "icon": "SeoIcon",
+    "name": "SEO",
+    "description": "Can people find your website on google and other search directories? We can help you generate more traffic to your site.",
+    "url": "search-engine-optimization",
+    "idPrefix": "seo",
+    "iconSrc": "./web-dev-background.svg",
+    "formType": "seo",
+    "label": "Enquire...",
+    "title": "SEO"
+  },
+  {
+    "icon": "DigitalMarketingIcon",
+    "name": "Digital Marketing",
+    "description": "Can people find your website on google and other search directories? We can help you generate more traffic to your site.",
+    "url": "search-engine-optimization",
+    "idPrefix": "digital-marketing",
+    "iconSrc": "./web-dev-background.svg",
+    "formType": "digital-marketing",
+    "label": "Enquire...",
+    "title": "Digital Marketing"
+  }
+]

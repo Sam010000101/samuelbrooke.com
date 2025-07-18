@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "cyberpunk";
+  default: true;
+  /* --color-secondary: teal; */
+  --color-base-100: rgb(35 30 34);
+  --color-base-200: rgb(35 30 34);
+  --color-base-300: rgb(35 30 34);
+}
+
+@theme {
+  --font-geist-mono: "Geist Mono", ui-monospace, monospace;
+  --font-geist-sans: "Geist Sans", ui-sans-serif, sans-serif;
+  --font-pjs: "Plus_Jakarta_Sans", ui-sans-serif, sans-serif;
+  --font-inter: "Inter", ui-sans-serif, sans-serif;
+  --color-black-sabath: rgb(35 30 34);
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, sans-serif;
+  --font-pjs: var(--font-pjs), ui-sans-serif, sans-serif;
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-1deg);
+    }
+    50% {
+      transform: rotate(1deg);
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,so we've added these compatibility styles to make sure everything still looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer utilities {
+  /* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+} */
+
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #666;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-info) var(--background);
+}
+
+.bg-texture {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAQAAADxYuQrAAAAWklEQVQI12NgAAFZBgRQBBGSDJITRRFiPUA+w0RRIIUCkPlGQGiGKq3XI9mo1iHLoIcsqAaltRjQ7URzB9hONHcAAcgVCHtBtqICI4Z6LaA8sp1GMCOQ7QSyAcvLDf4Fs8YtAAAAAElFTkSuQmCC") !important;
+  background-position: center;
+}
+
+.bg-hero {
+  background-image: url("/web-dev-background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: "no-repeat";
+}
