@@ -18,14 +18,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="cyberpunk" className="h-full max-w-screen">
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href="/web-dev-background.svg"
-          type="image/svg+xml"
-        />
-      </head>
       <body className="bg-black-sabath antialiased">{children}</body>
     </html>
   );

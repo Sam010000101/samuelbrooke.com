@@ -44,8 +44,8 @@ export default function Footer() {
         }}
       />
       <footer className="border-t-2 border-white/5">
-        <div className="bg-texture footer flex flex-col items-center justify-between gap-6 px-10 pt-10 pb-10 text-base-300 sm:pt-8 lg:flex-row">
-          <aside className="flex w-full flex-col items-center justify-start gap-2 lg:flex-row">
+        <div className="bg-texture footer flex flex-col items-center justify-between px-10 pt-10 pb-10 text-base-300 sm:gap-6 sm:pt-8 lg:flex-row">
+          <aside className="flex w-full flex-col items-center justify-start gap-4 sm:gap-2 lg:flex-row">
             <Avatar />
             <Link className="w-full" href="/">
               <p className="flex flex-col items-center text-center font-mono text-primary/80 sm:gap-2 lg:flex-row landscape:text-left">
@@ -56,7 +56,7 @@ export default function Footer() {
                   {" "}
                   |{" "}
                 </span>
-                <span className="text-lg font-bold landscape:text-base">
+                <span className="text-lg font-bold text-primary/70 landscape:text-base">
                   Web development & design
                 </span>
                 <span className="pt-2 text-lg text-slate-400 sm:pt-0 landscape:text-base">
@@ -66,7 +66,7 @@ export default function Footer() {
             </Link>
           </aside>
 
-          <nav className="self-justify-end text-info/90">
+          <nav className="self-justify-end text-primary/70">
             {/* <h6 className="footer-title">Social</h6> */}
             <div className="grid grid-flow-col gap-4">
               {/* LinkedIn */}

@@ -2,6 +2,7 @@
 import { useParallax } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
 import { WithContext, Person } from "schema-dts";
+import Image from "next/image";
 
 const personSchema: WithContext<Person> = {
   "@context": "https://schema.org",
@@ -57,7 +58,15 @@ export default function Hero() {
         className="wrapper relative hero h-screen will-change-transform motion-reduce:transform-none"
       >
         {/* Background Image */}
-        <div className="bg-hero absolute top-0 h-screen w-full gap-0 text-shadow-md sm:gap-2">
+        <div className="absolute top-0 h-screen w-full gap-0 text-shadow-md sm:gap-2">
+          <Image
+            src="./web-dev-background.svg"
+            alt="Background illustration showing modern web design tools"
+            fill
+            priority
+            sizes="100vw"
+            className="z-[-10] object-cover py-2"
+          />
           {/* Text Block */}
           <header role="banner" className="flex h-screen flex-col">
             <div
@@ -69,7 +78,7 @@ export default function Hero() {
                 opacity: hydrated ? 1 : 0,
               }}
             >
-              <h1 className="bg-texture m-4 w-full rounded-lg border-1 border-white/20 bg-base-200/95 p-2 sm:w-fit sm:p-3 sm:px-3">
+              <h1 className="bg-texture w-full border-white/20 bg-base-200/95 p-3 shadow-lg sm:m-4 sm:w-fit sm:rounded-lg sm:border-1 sm:p-4 sm:px-5">
                 <span className="flex text-5xl font-bold text-primary text-shadow-lg sm:flex-row md:text-7xl xl:text-nowrap">
                   Samuel Brooke:
                 </span>
@@ -93,14 +102,14 @@ export default function Hero() {
                       >
                         <stop
                           offset="10%"
-                          stopColor="#4dabff
+                          stopColor="#FF5F37
 "
                         />{" "}
                         {/* purple-500 */}
-                        <stop offset="50%" stopColor="#fff" />{" "}
+                        {/* <stop offset="50%" stopColor="#fff" />{" "} */}
                         <stop
-                          offset="90%"
-                          stopColor="#4dabff
+                          offset="80%"
+                          stopColor="#FF5F37
 "
                         />{" "}
                         {/* pink-500 */}

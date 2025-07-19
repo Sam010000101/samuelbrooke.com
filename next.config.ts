@@ -4,11 +4,11 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   output: "export",
-  // Optional: if your repo is a project page
-  basePath: isProd ? "/samuelbrooke.com" : "",
-  assetPrefix: isProd ? "/samuelbrooke.com" : "",
-  // Optional: Remove trailing slashes if needed
-  // trailingSlash: true,
+  basePath: isProd ? process.env.NEXT_PUBLIC_BASE_PATH : "",
+  assetPrefix: isProd ? process.env.NEXT_PUBLIC_BASE_PATH + "/" : "",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

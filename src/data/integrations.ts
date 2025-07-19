@@ -22,7 +22,7 @@ export const integrations: IntegrationItem[] = [
     title: "WordPress",
     href: "https://wordpress.org",
   },
-  { id: "strapi", title: "Stapi", href: "https://stapi.io" },
+  { id: "strapi", title: "Stapi", href: "https://strapi.io" },
   { id: "shopify", title: "Shopify", href: "https://shopify.com" },
   {
     id: "woocommerce",

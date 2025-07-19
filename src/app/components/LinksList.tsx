@@ -44,14 +44,14 @@ export default function LinksList({ header, items, footer }: Props) {
       >
         <div role="region" aria-labelledby="third-party-integrations">
           <section
-            className="third-party-intergrations bg-slate-400/5 sm:mt-10 sm:pt-10 sm:pb-14"
+            className="third-party-intergrations bg-slate-400/5 sm:py-10 md:mt-10"
             aria-labelledby="third-party-integrations"
           >
-            <div className="container mx-auto rounded-box p-4 text-white sm:p-6">
+            <div className="container mx-auto rounded-box p-4 text-white sm:container sm:p-6">
               {/* Heading */}
               <h2
                 id="third-party-integrations"
-                className="pt-3 text-center font-mono text-2xl font-bold text-primary antialiased text-shadow-lg sm:mb-6 sm:pt-0 sm:text-left sm:text-4xl sm:text-info/80"
+                className="py-6 text-center font-mono text-2xl font-bold text-primary antialiased text-shadow-lg sm:mb-6 sm:pt-0 sm:pb-0 sm:text-left sm:text-4xl sm:text-white/80"
               >
                 <span>{header}</span>
                 {footer && (
@@ -81,7 +81,7 @@ export default function LinksList({ header, items, footer }: Props) {
                       >
                         {item.icon ?? integrationIconMap[item.id] ?? null}
                       </span>
-                      <span className="text-lg font-medium text-white">
+                      <span className="text-lg font-medium text-slate-300">
                         {item.title}
                       </span>
                     </Link>
@@ -91,7 +91,7 @@ export default function LinksList({ header, items, footer }: Props) {
 
               {/* Footer Text */}
               {footer && (
-                <p className="hidden text-center font-mono text-2xl font-bold text-primary antialiased text-shadow-lg sm:mt-6 sm:block sm:pt-0 sm:text-right sm:text-4xl sm:text-info/80">
+                <p className="hidden w-max text-center font-mono text-2xl font-bold text-primary antialiased text-shadow-lg sm:mt-6 sm:block sm:pt-0 sm:text-right sm:text-4xl sm:text-white/80 md:w-full">
                   {footer}
                 </p>
               )}

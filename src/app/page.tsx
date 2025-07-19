@@ -40,7 +40,7 @@ export default function Home() {
         }}
       />
       {/* Main Layout Structure */}
-      <main className="grid-rows grid min-h-screen items-center gap-4 sm:gap-8">
+      <main className="grid-rows grid min-h-screen items-center gap-0 sm:gap-8">
         {/* Hero */}
         <ParallaxWrapper>
           <Hero />
@@ -48,17 +48,17 @@ export default function Home() {
         {/* Services Section */}
         <MultiCard />
         {/* Main Layout Sub Structure */}
-        <div className="grid sm:mt-10 sm:mb-20 sm:gap-8">
+        <div className="grid sm:gap-8 md:mb-20">
           {/* Frameworks and Libraries Block */}
           <BigFeatureCard features={features} />
           {/* 3rd Party Integrations Block */}
           <LinksList
-            header="Third Party Integrations..."
+            header="With Third Party Integrations..."
             items={integrations}
             footer="...for full-on functionality"
           />
           {/* Free Website Audit Block */}
-          <div className="py-10">
+          <div className="md:py-10">
             <BigFeatureCardBtn />
           </div>
         </div>

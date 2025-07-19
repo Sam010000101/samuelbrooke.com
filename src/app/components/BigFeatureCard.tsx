@@ -28,14 +28,14 @@ export default function BigFeatureCardIcons({
       <section
         id="developer-tools"
         aria-labelledby="developer-tools-heading"
-        className="mb-4 grid items-center justify-center px-2 sm:px-10 xl:grid-cols-16"
+        className="container mx-auto my-2 grid px-2 sm:mb-4 sm:h-fit"
       >
-        <div className="bg-texture card col-start-2 col-end-16 rounded-xs border border-primary/10 bg-info/5 p-0 py-4 shadow-xs sm:card-body sm:border-2 sm:p-[1.5rem] sm:py-8">
-          <div className="card-body gap-8 p-0 text-neutral sm:gap-12 sm:p-6">
+        <div className="card rounded-xs border border-primary/10 bg-info/5 p-0 py-2 shadow-lg sm:card-body sm:border-2 sm:p-[1.5rem] sm:py-8">
+          <div className="card-body gap-12 p-1 text-neutral md:p-6">
             <header className="flex flex-col items-center">
               <h2
                 id="developer-tools-heading"
-                className="card-title rounded-xs text-center font-mono text-2xl text-white/90 md:text-4xl"
+                className="card-title rounded-xs text-center font-mono text-2xl text-white/80 md:text-4xl"
               >
                 <div className="flex flex-wrap items-center justify-center gap-4 text-shadow-lg sm:gap-2">
                   {title}
@@ -43,7 +43,7 @@ export default function BigFeatureCardIcons({
               </h2>
             </header>
 
-            <div className="mx-auto grid grid-cols-2 place-items-center items-center gap-12 text-accent sm:mx-0 sm:grid-cols-4 sm:gap-4 lg:px-50">
+            <div className="mx-auto grid grid-cols-2 place-items-center items-center gap-8 text-primary sm:mx-0 sm:grid-cols-4 sm:gap-4 lg:px-50">
               {features.map((feature) => (
                 <Link
                   href={feature.href}
@@ -73,7 +73,7 @@ export default function BigFeatureCardIcons({
                 id="technology-heading"
                 className="card-title rounded-xs bg-black-sabath/25 text-center font-mono text-2xl text-white/90 sm:text-zinc-400 lg:text-4xl"
               >
-                <span className="text-lg italic text-shadow-lg md:text-2xl">
+                <span className="text-xl italic text-shadow-lg md:text-2xl">
                   {description}
                 </span>
               </p>

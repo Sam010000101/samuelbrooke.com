@@ -81,7 +81,7 @@ export default function Card({
             <div className="h-full w-full flex-1">
               {/* Image is optional */}
               {imageVisible && (
-                <div className="relative h-full max-w-full opacity-25">
+                <div className="relative h-full max-w-full opacity-15">
                   <Image
                     src={imageSrc?.trim() || fallbackImage}
                     alt=""
@@ -93,8 +93,8 @@ export default function Card({
                 </div>
               )}
             </div>
-            <div className="bg-texture card-body w-full bg-black-sabath/80">
-              <figure className="flex h-full flex-col items-center gap-2 text-info sm:flex-row sm:gap-4 sm:self-start">
+            <div className="bg-texture card-body w-full justify-center gap-2 bg-black-sabath/80">
+              <figure className="flex h-fit flex-col items-center gap-2 text-zinc-400 sm:flex-row sm:gap-4 sm:self-start">
                 {/* Render the icon component if it exists */}
                 {IconComponent && (
                   <IconComponent
@@ -103,21 +103,21 @@ export default function Card({
                     className="text-grey-300 h-10 w-10 shrink-0"
                   />
                 )}
-                <HeadingTag className="card-title items-center gap-4 rounded-xs text-center text-3xl text-primary text-shadow-lg sm:bg-primary/90 sm:px-2 sm:text-left sm:text-neutral">
+                <HeadingTag className="card-title items-center gap-4 rounded-xs text-center text-4xl text-primary/80 text-shadow-lg sm:px-2 sm:text-left">
                   {title}
                 </HeadingTag>
               </figure>
 
               <div
-                className="card-actions flex h-full w-full flex-col sm:py-1"
+                className="card-actions flex h-fit w-full flex-col gap-8 sm:gap-2 sm:py-1"
                 aria-label={`Actions for ${title}`}
               >
-                <p className="mb-2 text-center text-lg text-white/90 sm:text-left sm:text-xl">
+                <p className="mb-2 text-center text-lg text-zinc-400 sm:text-left sm:text-2xl">
                   {description}
                 </p>
                 <div className="w-full self-center sm:w-fit sm:self-end">
                   <EnquiryFormButton
-                    className=""
+                    className="opacity-70 btn-primary"
                     formType={formType}
                     label={label}
                     submitLabel={submitLabel}

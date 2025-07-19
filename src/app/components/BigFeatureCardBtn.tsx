@@ -52,10 +52,10 @@ export default function BigFeatureCardBtn() {
       >
         <section
           aria-labelledby="audit-heading"
-          className="grid items-center justify-center gap-y-8 sm:px-10 xl:grid-cols-8"
+          className="grid items-center justify-center gap-y-8 md:px-10 xl:grid-cols-8"
         >
           <div className="card col-start-2 col-end-8 border border-primary/10 bg-info/5 text-neutral shadow-sm sm:border-2">
-            <div className="card-body bg-linear-65 from-primary/10 to-accent/5 p-4 pb-6 sm:p-8 sm:pb-8">
+            <div className="card-body bg-linear-65 from-primary/10 to-accent/5 py-8 sm:p-8 sm:pb-8">
               {/* Accessible heading */}
               <header className="">
                 <h2
@@ -89,7 +89,7 @@ export default function BigFeatureCardBtn() {
               </header>
 
               {/* Row layout: paragraph + button */}
-              <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-col gap-6 sm:items-center sm:justify-between lg:flex-row">
                 <p className="text-center font-mono text-lg text-white/90 sm:text-left sm:text-xl sm:leading-relaxed">
                   Want a new website, or just want to improve your existing one?
                   I offer a free audit of your current website, with suggestions

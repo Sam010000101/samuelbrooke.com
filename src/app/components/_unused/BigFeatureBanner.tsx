@@ -1,4 +1,4 @@
-import AnimateInOnScroll from "./AnimateInOnScroll";
+import AnimateInOnScroll from "../AnimateInOnScroll";
 
 export default function BigFeatureBanner() {
   return (
@@ -7,7 +7,7 @@ export default function BigFeatureBanner() {
       duration="duration-1000"
       delay="delay-300"
     >
-      <div className="p-4 shadow-xs sm:p-0">
+      <div className="p-4 sm:p-0">
         <div className="card-body p-0 text-neutral sm:p-8">
           <div className="flex flex-col items-center gap-4">
             {/* Icon placeholder or component */}

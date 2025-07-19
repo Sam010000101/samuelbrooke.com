@@ -5,6 +5,7 @@
   name: "cyberpunk";
   default: true;
   /* --color-secondary: teal; */
+  --color-primary: rgb(255 95 55);
   --color-base-100: rgb(35 30 34);
   --color-base-200: rgb(35 30 34);
   --color-base-300: rgb(35 30 34);
@@ -16,6 +17,8 @@
   --font-pjs: "Plus_Jakarta_Sans", ui-sans-serif, sans-serif;
   --font-inter: "Inter", ui-sans-serif, sans-serif;
   --color-black-sabath: rgb(35 30 34);
+  --electric-orange: rgb(255 53 3);
+  --light-orange: rgb(255 95 55);
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
   --font-sans: var(--font-geist-sans), ui-sans-serif, sans-serif;
   --font-pjs: var(--font-pjs), ui-sans-serif, sans-serif;
@@ -81,11 +84,4 @@ html {
 .bg-texture {
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAQAAADxYuQrAAAAWklEQVQI12NgAAFZBgRQBBGSDJITRRFiPUA+w0RRIIUCkPlGQGiGKq3XI9mo1iHLoIcsqAaltRjQ7URzB9hONHcAAcgVCHtBtqICI4Z6LaA8sp1GMCOQ7QSyAcvLDf4Fs8YtAAAAAElFTkSuQmCC") !important;
   background-position: center;
-}
-
-.bg-hero {
-  background-image: url("/web-dev-background.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: "no-repeat";
 }
