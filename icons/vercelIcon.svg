@@ -1,0 +1,9 @@
+<svg
+        role="img"
+        aria-label="Vercel Logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+        className="h-20 w-20"
+      >
+        <path fill="currentColor" fillRule="evenodd" d="m256 48l240 416H16Z" />
+      </svg>
