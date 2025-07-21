@@ -28,9 +28,9 @@ export default function BigFeatureCardIcons({
       <section
         id="developer-tools"
         aria-labelledby="developer-tools-heading"
-        className="container mx-auto grid h-[calc(100vh-50px)] border-t-1 border-b-1 px-2 sm:mb-4 sm:h-fit sm:border-0"
+        className="container mx-auto grid items-center border-t-1 border-b-1 px-2 py-4 sm:mb-4 sm:h-fit sm:border-0"
       >
-        <div className="card rounded-xs border border-primary/10 p-0 py-0 shadow-lg sm:border-2 sm:bg-info/1 sm:p-[1.5rem] sm:py-8 md:card-body">
+        <div className="card h-fit rounded-xs border border-primary/10 p-0 py-0 shadow-lg sm:border-2 sm:bg-info/1 sm:p-[1.5rem] sm:py-8 md:card-body">
           <div className="card-body justify-center gap-12 p-0 text-neutral sm:gap-12 sm:p-1 md:p-6">
             <header className="flex flex-col items-center">
               <h2
@@ -41,7 +41,7 @@ export default function BigFeatureCardIcons({
               </h2>
             </header>
 
-            <div className="mx-auto grid grid-cols-2 place-items-center items-center gap-12 text-primary sm:mx-0 sm:grid-cols-4 sm:gap-4 lg:px-50">
+            <div className="mx-auto grid grid-cols-2 place-items-center items-center gap-12 text-primary sm:mx-0 sm:grid-cols-4 sm:gap-4 lg:px-50 landscape:grid-cols-4">
               {features.map((feature) => (
                 <Link
                   href={feature.href}

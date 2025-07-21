@@ -60,7 +60,7 @@ export default function BigFeatureCardBtn() {
               <header className="">
                 <h2
                   id="audit-heading"
-                  className="card-title rounded-xs text-center font-mono text-2xl text-primary/90 sm:px-2 sm:py-1 md:text-4xl"
+                  className="card-title rounded-xs text-center font-mono text-3xl text-primary/90 sm:px-2 sm:py-1 md:text-4xl"
                 >
                   <span className="flex flex-wrap items-center justify-center gap-4 sm:gap-2">
                     <svg
@@ -90,13 +90,13 @@ export default function BigFeatureCardBtn() {
 
               {/* Row layout: paragraph + button */}
               <div className="flex flex-col gap-6 sm:items-center sm:justify-between lg:flex-row">
-                <p className="text-center font-mono text-lg text-white/90 sm:text-left sm:text-xl sm:leading-relaxed">
+                <p className="text-center font-mono text-lg text-white/90 sm:text-xl sm:leading-relaxed lg:text-left">
                   Want a new website, or just want to improve your existing one?
                   I offer a free audit of your current website, with suggestions
                   on how to improve it — including performance, SEO, and user
                   experience — no obligation!
                 </p>
-                <div className="sm:w-fit">
+                <div className="mb-3 sm:mb-0 sm:w-fit">
                   <EnquiryFormButton
                     formType="audit"
                     title="Free Audit"
