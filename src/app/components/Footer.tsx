@@ -49,15 +49,15 @@ export default function Footer() {
             <Avatar />
             <Link className="w-full" href="/">
               <p className="flex flex-col items-center text-center font-mono text-primary/80 sm:gap-2 lg:flex-row landscape:text-left">
-                <span className="text-lg font-bold landscape:text-base">
+                <span className="text-lg font-semibold landscape:text-base">
                   Samuel Brooke
                 </span>
                 <span className="hidden text-lg text-slate-400/80 lg:block landscape:text-base">
                   {" "}
                   |{" "}
                 </span>
-                <span className="text-lg font-bold text-primary/70 landscape:text-base">
-                  Web development & design
+                <span className="text-lg font-semibold text-primary/70 landscape:text-base">
+                  Web Development & Design
                 </span>
                 <span className="pt-2 text-lg text-slate-400 sm:pt-0 landscape:text-base">
                   © {new Date().getFullYear()} All rights reserved.

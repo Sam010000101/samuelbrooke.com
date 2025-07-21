@@ -77,7 +77,7 @@ export default function Card({
           aria-labelledby={`${id}-title`}
           className={`${articleClassName} ${geistMono.className} service-card flex h-full w-full items-stretch antialiased`}
         >
-          <div className="image-full divide card h-full w-full animate-in divide-y-4 divide-y-reverse divide-info/25 rounded-xs border-[#4dabff]/15 bg-black-sabath/50 shadow-xl duration-1000 fade-in slide-in-from-bottom sm:divide-y-0 sm:border">
+          <div className="image-full divide card h-full w-full animate-in divide-y-4 divide-y-reverse divide-info/25 rounded-xs border-[#4dabff]/15 bg-black-sabath/50 duration-1000 fade-in slide-in-from-bottom sm:divide-y-0 sm:border sm:shadow-xl">
             <div className="h-full w-full flex-1">
               {/* Image is optional */}
               {imageVisible && (
@@ -117,7 +117,7 @@ export default function Card({
                 </p>
                 <div className="w-full self-center sm:w-fit sm:self-end">
                   <EnquiryFormButton
-                    className="opacity-70 btn-primary"
+                    className="!rounded-md !border-1 opacity-75 btn-primary hover:bg-primary/5 hover:text-primary"
                     formType={formType}
                     label={label}
                     submitLabel={submitLabel}

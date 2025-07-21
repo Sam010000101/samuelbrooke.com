@@ -165,18 +165,18 @@ export default function EnquiryForm({
 
       <div className="fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-black/80 px-1 landscape:items-start landscape:pt-2">
         <form
-          className="bg-texture flex items-center justify-center rounded-lg bg-black-sabath/20"
+          className="flex items-center justify-center rounded-lg bg-black-sabath/20"
           onSubmit={handleSubmit}
         >
-          <fieldset className="font-mon relative fieldset min-h-[20rem] w-full rounded-lg border-1 bg-linear-65 from-info/20 to-accent/15 font-sans text-xl text-white/90 sm:m-8 sm:mx-2 sm:w-xs sm:text-xl">
+          <fieldset className="font-mon relative fieldset min-h-[20rem] w-full rounded-lg border-2 border-primary/50 bg-primary/10 font-sans text-xl text-primary/70 sm:m-8 sm:mx-2 sm:w-xs sm:text-xl">
             {/* Title */}
-            <div className="px-0 pl-2 font-mono text-xl font-medium text-white/90 sm:mt-1">
+            <div className="px-0 pl-2 font-mono text-xl font-medium text-primary/70 sm:mt-1">
               {getFormTitle()} Enquiry
             </div>
-            <hr />
+            <hr className="border-t-primary/50" />
             <div className="grid-rows grid gap-2 p-3 sm:p-3">
               {/* Close Button */}
-              <div className="absolute inset-0 -z-20 rounded-lg bg-slate-900"></div>
+              <div className="absolute inset-0 -z-20 rounded-lg bg-black"></div>
               <button
                 type="button"
                 onClick={onClose}
@@ -187,17 +187,15 @@ export default function EnquiryForm({
               </button>
               {/* Form Fields */}
               {/* Email Field */}
-              <div className="py-1 font-mono text-lg underline underline-offset-5">
-                Contact Details
-              </div>
+              <div className="py-1 font-mono text-lg">Contact Details</div>
               <div className="flex-cols-2 flex gap-3">
-                <label className="label text-white/70" htmlFor="email">
+                <label className="label text-primary/70" htmlFor="email">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     width="1em"
                     height="1em"
-                    className="rounded-sm text-slate-400"
+                    className="rounded-sm text-primary/70"
                   >
                     <path
                       fill="currentColor"
@@ -211,7 +209,7 @@ export default function EnquiryForm({
                   value={formData.email}
                   onChange={handleInputChange}
                   list="email-suggestions"
-                  className="input h-9 rounded-md bg-[#1e1e1e] pr-10 text-base text-slate-300 placeholder:font-mono placeholder:font-light placeholder:text-white/30 placeholder:italic focus:ring-2 focus:ring-white/30 focus:outline-none"
+                  className="input h-9 rounded-md bg-black-sabath pr-10 text-base text-slate-300 placeholder:font-mono placeholder:font-light placeholder:text-white/30 placeholder:italic focus:ring-2 focus:ring-white/30 focus:outline-none"
                   placeholder="Email address"
                   autoComplete="email"
                   style={{
@@ -228,13 +226,13 @@ export default function EnquiryForm({
               </div>
               {/* Name Field */}
               <div className="flex-cols-2 flex gap-3">
-                <label className="label text-white/70" htmlFor="name">
+                <label className="label text-primary/70" htmlFor="name">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     width="1em"
                     height="1em"
-                    className="rounded-sm text-slate-400"
+                    className="rounded-sm text-primary/70"
                   >
                     <path
                       fill="currentColor"
@@ -248,7 +246,7 @@ export default function EnquiryForm({
                   value={formData.name}
                   onChange={handleInputChange}
                   list="name-suggestions"
-                  className="input h-9 rounded-md bg-[#1e1e1e] pr-10 text-lg text-slate-300 placeholder:font-mono placeholder:font-light placeholder:text-white/30 placeholder:italic focus:ring-2 focus:ring-white/30 focus:outline-none sm:text-lg"
+                  className="input h-9 rounded-md bg-black-sabath pr-10 text-lg text-slate-300 placeholder:font-mono placeholder:font-light placeholder:text-white/30 placeholder:italic focus:ring-2 focus:ring-white/30 focus:outline-none sm:text-lg"
                   placeholder="Name"
                   autoComplete="name"
                   style={{
@@ -267,7 +265,7 @@ export default function EnquiryForm({
                 <>
                   {/* Website Field */}
                   <label
-                    className="text-shadow label gap-3 py-1 pt-2 pl-1 text-white/70"
+                    className="text-shadow label gap-3 py-1 pt-2 pl-1 text-primary/70"
                     htmlFor="website"
                   >
                     {/* <svg
@@ -282,7 +280,7 @@ export default function EnquiryForm({
                         d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2"
                       />
                     </svg> */}
-                    <div className="font-mono text-lg text-white/90 underline underline-offset-5">
+                    <div className="font-mono text-lg text-primary/70">
                       Website
                     </div>
                   </label>
@@ -290,14 +288,14 @@ export default function EnquiryForm({
                     id="website"
                     value={formData.website}
                     onChange={handleInputChange}
-                    className="input h-9 rounded-md bg-[#1e1e1e] text-lg text-slate-300 placeholder:font-mono placeholder:font-light placeholder:text-white/30 placeholder:italic focus:ring-2 focus:ring-white/30 focus:outline-none sm:text-lg"
+                    className="input h-9 rounded-md bg-black-sabath text-lg text-slate-300 placeholder:font-mono placeholder:font-light placeholder:text-white/30 placeholder:italic focus:ring-2 focus:ring-white/30 focus:outline-none sm:text-lg"
                     placeholder="Your website address"
                     autoComplete="website"
                   />
                 </>
               )}
               <label
-                className="label gap-3 py-1 pt-2 pl-1 text-white/70"
+                className="label gap-3 py-1 pt-2 pl-1 text-primary/70"
                 htmlFor="message"
               >
                 {/* <svg
@@ -312,7 +310,7 @@ export default function EnquiryForm({
                     d="M4 4h16v12H5.17L4 17.17zm0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm2 10h12v2H6zm0-3h12v2H6zm0-3h12v2H6z"
                   />
                 </svg> */}
-                <div className="font-mono text-lg text-white/90 underline underline-offset-5">
+                <div className="font-mono text-lg text-primary/70">
                   Message (optional)
                 </div>
               </label>
@@ -320,14 +318,14 @@ export default function EnquiryForm({
                 id="message"
                 value={formData.message}
                 onChange={handleInputChange}
-                className="h-19 overflow-y-hidden rounded-md bg-[#1e1e1e] px-3 py-2 text-base text-slate-300 placeholder:font-mono placeholder:font-light placeholder:text-white/30 placeholder:italic focus:ring-2 focus:ring-white/30 focus:outline-none sm:h-26"
+                className="h-19 overflow-y-hidden rounded-md bg-black-sabath px-3 py-2 text-base text-slate-300 placeholder:font-mono placeholder:font-light placeholder:text-white/30 placeholder:italic focus:ring-2 focus:ring-white/30 focus:outline-none sm:h-26"
                 placeholder={getPlaceholder("How can I help you?")}
                 autoComplete="off"
               />
               <button
                 type="submit"
                 aria-label={submitLabel}
-                className="btn my-5 rounded-lg border-2 border-white/50 bg-success/25 font-mono text-lg text-white/70 shadow-sm duration-300 btn-outline hover:border-white/50 hover:bg-success/35 hover:text-white/80 focus:ring-2 focus:ring-info focus:outline-none sm:my-4 sm:w-auto sm:min-w-[8rem] sm:text-xl"
+                className="btn my-5 rounded-lg border-2 border-primary/50 bg-transparent font-mono text-lg text-primary/70 shadow-sm duration-300 btn-outline hover:border-primary/50 hover:bg-primary/5 hover:text-primary/80 focus:ring-2 focus:ring-info focus:outline-none sm:my-4 sm:w-auto sm:min-w-[8rem] sm:text-xl"
               >
                 {submitLabel}
               </button>

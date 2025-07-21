@@ -60,7 +60,7 @@ export default function BigFeatureCardBtn() {
               <header className="">
                 <h2
                   id="audit-heading"
-                  className="card-title rounded-xs text-center font-mono text-2xl text-primary/90 sm:px-2 sm:py-1 lg:text-4xl"
+                  className="card-title rounded-xs text-center font-mono text-2xl text-primary/90 sm:px-2 sm:py-1 md:text-4xl"
                 >
                   <span className="flex flex-wrap items-center justify-center gap-4 sm:gap-2">
                     <svg
@@ -72,17 +72,17 @@ export default function BigFeatureCardBtn() {
                       strokeWidth="1.5"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="size-[2em] text-primary"
+                      className="size-[2em] text-info"
                     >
                       <path d="M19 11v-1c0-3.771 0-5.657-1.172-6.828S14.771 2 11 2S5.343 2 4.172 3.172S3 6.229 3 10v4c0 3.771 0 5.657 1.172 6.828S7.229 22 11 22" />
                       <path d="m21 22-1.714-1.714m.571-2.857a3.429 3.429 0 1 1-6.857 0a3.429 3.429 0 0 1 6.857 0M7 7h8m-8 4h4" />
                     </svg>
                     <div className="space-x-4">
-                      <span>Request a</span>
+                      <span>Request A</span>
                       <span className="text-primary underline underline-offset-4">
                         FREE
                       </span>
-                      <span>Site Audit Today!</span>
+                      <span>Site Audit!</span>
                     </div>
                   </span>
                 </h2>
