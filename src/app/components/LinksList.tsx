@@ -44,7 +44,7 @@ export default function LinksList({ header, items, footer }: Props) {
       >
         <div role="region" aria-labelledby="third-party-integrations">
           <section
-            className="third-party-intergrations bg-slate-400/5 sm:py-10 md:mt-10"
+            className="third-party-intergrations sm:bg-slate-400/5 sm:py-10 md:mt-10"
             aria-labelledby="third-party-integrations"
           >
             <div className="container mx-auto rounded-box p-4 text-white sm:container sm:p-6">
@@ -73,7 +73,7 @@ export default function LinksList({ header, items, footer }: Props) {
                       aria-label={item.title}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-5 rounded-md border border-white/10 p-5 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-white/5"
+                      className="flex items-center gap-5 rounded-md border border-white/10 p-3 shadow-md transition-transform duration-300 hover:scale-105 hover:bg-white/5 sm:p-5"
                     >
                       <span
                         className="h-10 w-10 text-primary"

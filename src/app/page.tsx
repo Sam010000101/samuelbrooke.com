@@ -48,7 +48,7 @@ export default function Home() {
         {/* Services Section */}
         <MultiCard />
         {/* Main Layout Sub Structure */}
-        <div className="grid sm:gap-8 md:mb-20">
+        <div className="grid divide-y-4 divide-y-reverse divide-info/5 sm:gap-8 sm:divide-y-0 md:mb-20">
           {/* Frameworks and Libraries Block */}
           <BigFeatureCard features={features} />
           {/* 3rd Party Integrations Block */}

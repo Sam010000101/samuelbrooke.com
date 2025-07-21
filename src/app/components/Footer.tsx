@@ -44,19 +44,21 @@ export default function Footer() {
         }}
       />
       <footer className="border-t-2 border-white/5">
-        <div className="bg-texture footer flex flex-col items-center justify-between px-10 pt-14 pb-10 text-base-300 sm:gap-6 sm:pt-8 xl:flex-row">
+        <div className="bg-texture footer flex flex-col items-center justify-between px-10 pt-10 pb-7 text-base-300 sm:gap-6 sm:pt-8 md:pb-10 xl:flex-row">
           <aside className="flex w-full flex-col items-center justify-start gap-4 sm:gap-4 lg:flex-row landscape:flex-row">
             <div className="mb-1 md:mb-4">
               <Avatar />
             </div>
             <Link className="w-full" href="/">
               <p className="flex flex-col items-center text-center font-mono text-primary/80 sm:gap-2 lg:flex-row landscape:items-start landscape:text-left">
-                <span className="text-lg font-semibold">Samuel Brooke</span>
+                <span className="text-lg font-bold text-info/80">
+                  Samuel Brooke
+                </span>
                 <span className="hidden text-lg text-slate-400/80 lg:block">
                   {" "}
                   |{" "}
                 </span>
-                <span className="text-lg font-semibold text-primary/70">
+                <span className="text-lg font-semibold text-info/70">
                   Web Development & Design
                 </span>
                 <span className="hidden text-lg text-slate-400/80 lg:block">

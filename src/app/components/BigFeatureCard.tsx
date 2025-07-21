@@ -15,7 +15,7 @@ interface BigFeatureCardProps {
 }
 
 export default function BigFeatureCardIcons({
-  title = "Websites built with the latest frameworks for the modern web",
+  title = "Websites built with the latest frameworks for the modern web !",
   description = "...for high-performance & responsive websites that look great on any device!",
   features,
 }: BigFeatureCardProps) {
@@ -28,10 +28,10 @@ export default function BigFeatureCardIcons({
       <section
         id="developer-tools"
         aria-labelledby="developer-tools-heading"
-        className="container mx-auto grid items-center border-t-1 border-b-1 px-2 py-4 sm:mb-4 sm:h-fit sm:border-0"
+        className="container mx-auto grid items-center px-2 py-6 sm:mb-4 sm:h-fit"
       >
-        <div className="card h-fit rounded-xs border border-primary/10 p-0 py-0 shadow-lg sm:border-2 sm:bg-info/1 sm:p-[1.5rem] sm:py-8 md:card-body">
-          <div className="card-body justify-center gap-12 p-0 text-neutral sm:gap-12 sm:p-1 md:p-6">
+        <div className="card h-screen p-0 py-0 sm:h-fit sm:p-[1.5rem] sm:py-8 md:card-body">
+          <div className="card-body justify-center gap-10 p-0 text-neutral sm:gap-12 sm:p-1 md:p-6 landscape:gap-8">
             <header className="flex flex-col items-center">
               <h2
                 id="developer-tools-heading"
@@ -41,7 +41,7 @@ export default function BigFeatureCardIcons({
               </h2>
             </header>
 
-            <div className="mx-auto grid grid-cols-2 place-items-center items-center gap-12 text-primary sm:mx-0 sm:grid-cols-4 sm:gap-4 lg:px-50 landscape:grid-cols-4">
+            <div className="mx-auto grid grid-cols-2 place-items-center items-center gap-8 text-primary sm:mx-0 sm:grid-cols-4 sm:gap-4 lg:px-50 landscape:grid-cols-4">
               {features.map((feature) => (
                 <Link
                   href={feature.href}
@@ -56,7 +56,7 @@ export default function BigFeatureCardIcons({
                   >
                     {feature.icon}
                     <figcaption
-                      className="text-xl text-white/60"
+                      className="text-xl text-white/80"
                       id={`${feature.name.toLowerCase().replace(/[^a-z0-9-]/g, "")}-caption`}
                       aria-hidden="true"
                     >
@@ -71,7 +71,7 @@ export default function BigFeatureCardIcons({
                 id="technology-heading"
                 className="card-title rounded-xs bg-black-sabath/25 text-center font-mono text-2xl text-white/90 sm:text-zinc-400 lg:text-4xl"
               >
-                <span className="text-xl italic text-shadow-lg md:text-2xl">
+                <span className="text-xl text-shadow-lg sm:italic md:text-3xl">
                   {description}
                 </span>
               </p>
