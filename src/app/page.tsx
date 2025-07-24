@@ -8,6 +8,7 @@ import BigFeatureCard from "./components/BigFeatureCard";
 import { ReactIcon, NextIcon, VercelIcon, TypeScriptIcon } from "@/icons";
 import { integrations } from "@/data/integrations";
 import LinksList from "./components/LinksList";
+import PageSpeedInsights from "./components/PageSpeedInsights";
 
 const homepageSchema: WithContext<WebPage> = {
   "@context": "https://schema.org",
@@ -51,12 +52,15 @@ export default function Home() {
         <div className="grid divide-y-4 divide-y-reverse divide-info/5 sm:gap-8 sm:divide-y-0 md:mb-20">
           {/* Frameworks and Libraries Block */}
           <BigFeatureCard features={features} />
+
           {/* 3rd Party Integrations Block */}
           <LinksList
             header="With Third Party Integrations..."
             items={integrations}
             footer="...for full-on functionality"
           />
+          {/* Page Speed Insights Block */}
+          <PageSpeedInsights />
           {/* Free Website Audit Block */}
           <div className="md:py-10">
             <BigFeatureCardBtn />
