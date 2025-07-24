@@ -10,6 +10,10 @@ A "one-pager" representing Samuel Brooke, Freelance Web Designer & Developer.
 - As a point of contact for all enquiries.
 - As a single-page demo using Next.js Static Site Generation (SSG).
 
+## Features
+
+- serverless function to relay enquiries to my smpt email handler.
+
 ## Built With
 
 [![Static Badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
