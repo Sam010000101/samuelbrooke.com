@@ -2,7 +2,7 @@
 import { useParallax } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
 import { WithContext, Person } from "schema-dts";
-// import Image from "next/image";
+import Image from "next/image";
 
 const personSchema: WithContext<Person> = {
   "@context": "https://schema.org",
@@ -59,15 +59,15 @@ export default function Hero() {
       >
         {/* Background Image */}
         <div className="absolute top-0 h-screen w-full gap-0 text-shadow-md sm:gap-2">
-          {/* <Image
-            src="./web-dev-background.svg"
-            alt="Background illustration showing modern web design tools"
+          <Image
+            src="web-dev-background-240725.svg"
+            alt="Background illustration showing the world"
             fill
             priority={true}
-            sizes="100vw"
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1200px"
             className="z-[-10] object-cover py-2"
-          /> */}
-          <picture>
+          />
+          {/* <picture>
             <source
               srcSet="https://aucs.co.uk/assets/images/web-dev-background-240725_01.webp"
               type="image/webp"
@@ -80,7 +80,7 @@ export default function Hero() {
               decoding="async"
               fetchPriority="high"
             />
-          </picture>
+          </picture> */}
           {/* Text Block */}
           <header role="banner" className="flex h-screen flex-col">
             <div
