@@ -1,15 +1,11 @@
 import type { NextConfig } from "next";
 
-const isGitHub = process.env.DEPLOY_TARGET === "github";
-
-const basePath = isGitHub ? "/samuelbrooke.com" : "";
-const assetPrefix = isGitHub ? "/samuelbrooke.com/" : "/";
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath,
-  assetPrefix,
-  trailingSlash: true,
+  basePath: isProd ? process.env.NEXT_PUBLIC_BASE_PATH : "",
+  assetPrefix: isProd ? process.env.NEXT_PUBLIC_BASE_PATH + "/" : "",
   images: {
     remotePatterns: [
       {
