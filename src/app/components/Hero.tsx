@@ -2,7 +2,7 @@
 import { useParallax } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
 import { WithContext, Person } from "schema-dts";
-import Image from "next/image";
+// import Image from "next/image";
 
 const personSchema: WithContext<Person> = {
   "@context": "https://schema.org",
@@ -78,6 +78,7 @@ export default function Hero() {
               className="absolute inset-0 z-[-10] h-full w-full object-cover py-2"
               loading="eager"
               decoding="async"
+              fetchPriority="high"
             />
           </picture>
           {/* Text Block */}

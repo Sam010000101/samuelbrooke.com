@@ -5,13 +5,15 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "postbuild": "mkdir -p out && touch out/.nojekyll",
+    "export": "next export",
+    "postbuild": "touch out/.nojekyll",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "predeploy": "npm run build && npm run export",
+    "deploy": "npm run predeploy && npm run postbuild && gh-pages -d out"
   },
   "dependencies": {
+    "@cloudflare/next-on-pages": "^1.13.12",
     "next": "15.1.7",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "react": "^19.0.0",
