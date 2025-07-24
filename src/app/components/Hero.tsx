@@ -59,14 +59,27 @@ export default function Hero() {
       >
         {/* Background Image */}
         <div className="absolute top-0 h-screen w-full gap-0 text-shadow-md sm:gap-2">
-          <Image
+          {/* <Image
             src="./web-dev-background.svg"
             alt="Background illustration showing modern web design tools"
             fill
-            priority
+            priority={true}
             sizes="100vw"
             className="z-[-10] object-cover py-2"
-          />
+          /> */}
+          <picture>
+            <source
+              srcSet="https://aucs.co.uk/assets/images/web-dev-background-240725_01.webp"
+              type="image/webp"
+            />
+            <img
+              src="https://aucs.co.uk/assets/images/web-dev-background-240725_01.png"
+              alt="Background illustration showing modern web design tools"
+              className="absolute inset-0 z-[-10] h-full w-full object-cover py-2"
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
           {/* Text Block */}
           <header role="banner" className="flex h-screen flex-col">
             <div
@@ -78,7 +91,7 @@ export default function Hero() {
                 opacity: hydrated ? 1 : 0,
               }}
             >
-              <h1 className="bg-texture w-full border-white/20 bg-base-200/95 p-3 shadow-lg sm:m-4 sm:w-fit sm:rounded-lg sm:border-1 sm:p-4 sm:px-5">
+              <h1 className="bg-texture mx-auto mt-10 w-full border-white/20 bg-base-200/95 p-3 shadow-lg sm:m-4 sm:w-fit sm:rounded-lg sm:border-1 sm:p-4 sm:px-5 sm:max-sm:self-end landscape:sm:max-md:mb-20 landscape:sm:max-md:self-end">
                 <span className="flex text-5xl font-bold text-primary text-shadow-lg sm:flex-row md:text-7xl xl:text-nowrap">
                   Samuel Brooke:
                 </span>
