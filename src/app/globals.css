@@ -13,16 +13,11 @@
 
 @theme {
   --font-geist-mono: "Geist Mono", ui-monospace, monospace;
-  --font-geist-sans: "Geist Sans", ui-sans-serif, sans-serif;
-  --font-pjs: "Plus_Jakarta_Sans", ui-sans-serif, sans-serif;
-  --font-inter: "Inter", ui-sans-serif, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-titillium: "Titillium Web", ui-sans-serif, sans-serif;
   --color-black-sabath: rgb(35 30 34);
   --electric-orange: rgb(255 53 3);
   --light-orange: rgb(255 95 55);
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --font-sans: var(--font-geist-sans), ui-sans-serif, sans-serif;
-  --font-pjs: var(--font-pjs), ui-sans-serif, sans-serif;
-  --font-titillium: "Titillium Web", ui-sans-serif, sans-serif;
 
   --animate-wiggle: wiggle 1s ease-in-out infinite;
   @keyframes wiggle {

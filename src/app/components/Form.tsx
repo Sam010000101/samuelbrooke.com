@@ -168,7 +168,7 @@ export default function EnquiryForm({
           className="flex items-center justify-center rounded-lg bg-black-sabath/20"
           onSubmit={handleSubmit}
         >
-          <fieldset className="font-mon relative fieldset min-h-[20rem] w-full rounded-lg border-2 border-primary/50 bg-primary/10 font-sans text-xl text-primary/70 sm:m-8 sm:mx-2 sm:w-xs sm:text-xl">
+          <fieldset className="font-mon relative fieldset min-h-[20rem] w-full rounded-lg border-2 border-primary/50 bg-primary/10 font-mono text-xl text-primary/70 sm:m-8 sm:mx-2 sm:w-xs sm:text-xl">
             {/* Title */}
             <div className="px-0 pl-2 font-mono text-xl font-medium text-primary/70 sm:mt-1">
               {getFormTitle()} Enquiry
