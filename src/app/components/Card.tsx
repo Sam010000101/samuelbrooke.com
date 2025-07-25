@@ -77,12 +77,13 @@ export default function Card({
           aria-labelledby={`${id}-title`}
           className={`${articleClassName} ${geistMono.className} service-card flex h-full w-full items-stretch antialiased`}
         >
-          <div className="image-full divide card h-full w-full animate-in divide-y-4 divide-y-reverse divide-info/25 rounded-xs border-[#4dabff]/15 bg-black-sabath/50 duration-1000 fade-in slide-in-from-bottom sm:divide-y-0 sm:border sm:shadow-xl">
+          <div className="image-full divide card h-full w-full animate-in divide-y-4 divide-y-reverse divide-info/25 rounded-xl border-[#4dabff]/10 bg-black-sabath/50 duration-1000 fade-in slide-in-from-bottom sm:divide-y-0 sm:border-2 sm:shadow-xl">
             <div className="h-full w-full flex-1">
               {/* Image is optional */}
               {imageVisible && (
                 <div className="relative h-full max-w-full opacity-15">
                   <Image
+                    className="rounded-xl opacity-35"
                     src={imageSrc?.trim() || fallbackImage}
                     alt=""
                     role="presentation"
@@ -93,7 +94,7 @@ export default function Card({
                 </div>
               )}
             </div>
-            <div className="bg-texture card-body w-full justify-center gap-2 bg-black-sabath/80">
+            <div className="card-body w-full justify-center gap-2">
               <figure className="flex h-fit flex-col items-center gap-2 text-zinc-400 sm:flex-row sm:gap-4 sm:self-start">
                 {/* Render the icon component if it exists */}
                 {IconComponent && (
@@ -103,7 +104,7 @@ export default function Card({
                     className="text-grey-300 h-10 w-10 shrink-0"
                   />
                 )}
-                <HeadingTag className="card-title items-center gap-4 rounded-xs text-center text-4xl text-primary/80 text-shadow-lg sm:px-2 sm:text-left">
+                <HeadingTag className="card-title items-center gap-4 rounded-xs text-center text-4xl text-[#89ff8e] text-shadow-lg sm:px-2 sm:text-left">
                   {title}
                 </HeadingTag>
               </figure>
@@ -117,7 +118,7 @@ export default function Card({
                 </p>
                 <div className="w-full self-center sm:w-fit sm:self-end">
                   <EnquiryFormButton
-                    className="!rounded-md !border-1 opacity-75 btn-primary hover:bg-primary/5 hover:text-primary"
+                    className="!rounded-md !border-1 border-[#89ff8e] text-[#89ff8e] opacity-75 hover:bg-[#89ff8e]/5 hover:text-[#89ff8e]"
                     formType={formType}
                     label={label}
                     submitLabel={submitLabel}

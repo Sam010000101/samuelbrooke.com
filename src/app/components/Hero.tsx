@@ -92,88 +92,81 @@ export default function Hero() {
                 opacity: hydrated ? 1 : 0,
               }}
             >
-              <h1 className="bg-texture mx-auto mt-10 w-full border-white/20 bg-base-200/95 p-3 shadow-lg sm:m-4 sm:w-fit sm:rounded-lg sm:border-1 sm:p-4 sm:px-5 sm:max-sm:self-end landscape:sm:max-md:mb-20 landscape:sm:max-md:self-end">
-                <span className="flex text-5xl font-bold text-primary text-shadow-lg sm:flex-row md:text-7xl xl:text-nowrap">
-                  Samuel Brooke:
-                </span>
-                <span className="flex items-center text-2xl text-shadow-md sm:flex-row md:text-7xl">
-                  Freelance Web Designer
-                </span>
-                <span className="flex items-center justify-between text-2xl text-shadow-md sm:flex-row md:text-7xl">
-                  & Developer{" "}
-                  <svg
-                    viewBox="0 0 50.000053 50.000038"
-                    className="inline-block h-8 w-8 rotate-90 md:h-16 md:w-16"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <defs>
-                      <linearGradient
-                        id="myGradient"
-                        x1="0%"
-                        y1="0%"
-                        x2="80%"
-                        y2="110%"
-                      >
-                        <stop
-                          offset="10%"
-                          stopColor="#FF5F37
+              <div className="bg-texture mx-auto mt-10 flex w-full flex-col items-center justify-center gap-2 border-2 border-[#89ff8e]/10 bg-black-sabath p-3 !pr-4 shadow-lg sm:m-4 sm:w-fit sm:flex-row sm:gap-2 sm:rounded-lg sm:border-1 sm:p-4 sm:px-3 sm:max-sm:self-end landscape:sm:max-md:mb-20 landscape:sm:max-md:self-end">
+                <svg
+                  viewBox="0 0 50.000053 50.000038"
+                  className="w-30 rotate-90 rounded-lg"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <linearGradient
+                      id="myGradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="80%"
+                      y2="110%"
+                    >
+                      <stop offset="10%" stopColor="#89ff8e" />{" "}
+                      {/* purple-500 */}
+                      {/* <stop offset="50%" stopColor="#fff" />{" "} */}
+                      <stop
+                        offset="80%"
+                        stopColor="#89ff8e
 "
-                        />{" "}
-                        {/* purple-500 */}
-                        {/* <stop offset="50%" stopColor="#fff" />{" "} */}
-                        <stop
-                          offset="80%"
-                          stopColor="#FF5F37
-"
-                        />{" "}
-                        {/* pink-500 */}
-                      </linearGradient>
-                    </defs>
-                    <g id="layer2">
-                      <g id="g7" transform="translate(-95.205558,-208.25193)">
-                        <path
-                          style={{
-                            opacity: 0.712788,
-                            fill: "url(#myGradient)",
-                            fillOpacity: 1,
-                            fillRule: "evenodd",
-                            stroke: "currentColor",
-                            strokeWidth: 0,
-                            strokeLinejoin: "bevel",
-                            strokeOpacity: 1,
-                          }}
-                          d="m 120.20557,208.25195 h 25.00001 v 25.00001 z"
-                          id="path2-1-4"
-                        />
-                        <path
-                          style={{
-                            opacity: 0.712788,
-                            fill: "url(#myGradient)",
-                            fillRule: "evenodd",
-                            stroke: "currentColor",
-                            strokeWidth: 0,
-                            strokeLinejoin: "bevel",
-                          }}
-                          d="m 145.20557,235.93511 -27.68318,-27.68318 h -8.36923 l 36.05241,36.05241 z"
-                          id="path7-5"
-                        />
-                        <path
-                          style={{
-                            opacity: 0.712788,
-                            fill: "url(#myGradient)",
-                            fillRule: "evenodd",
-                            stroke: "currentColor",
-                            strokeWidth: 0,
-                            strokeLinejoin: "bevel",
-                          }}
-                          d="m 145.20561,246.64493 -38.39301,-38.393 H 95.205558 l 50.000052,50.00004 z"
-                          id="path5-8"
-                        />
-                      </g>
+                      />{" "}
+                      {/* pink-500 */}
+                    </linearGradient>
+                  </defs>
+                  <g id="layer2">
+                    <g id="g7" transform="translate(-95.205558,-208.25193)">
+                      <path
+                        style={{
+                          opacity: 0.9,
+                          fill: "url(#myGradient)",
+                          fillOpacity: 1,
+                          fillRule: "evenodd",
+                          stroke: "currentColor",
+                          strokeWidth: 0,
+                          strokeLinejoin: "bevel",
+                          strokeOpacity: 1,
+                        }}
+                        d="m 120.20557,208.25195 h 25.00001 v 25.00001 z"
+                        id="path2-1-4"
+                      />
+                      <path
+                        style={{
+                          opacity: 0.6,
+                          fill: "url(#myGradient)",
+                          fillRule: "evenodd",
+                          stroke: "currentColor",
+                          strokeWidth: 0,
+                          strokeLinejoin: "bevel",
+                        }}
+                        d="m 145.20557,235.93511 -27.68318,-27.68318 h -8.36923 l 36.05241,36.05241 z"
+                        id="path7-5"
+                      />
+                      <path
+                        style={{
+                          opacity: 0.3,
+                          fill: "url(#myGradient)",
+                          fillRule: "evenodd",
+                          stroke: "currentColor",
+                          strokeWidth: 0,
+                          strokeLinejoin: "bevel",
+                        }}
+                        d="m 145.20561,246.64493 -38.39301,-38.393 H 95.205558 l 50.000052,50.00004 z"
+                        id="path5-8"
+                      />
                     </g>
-                  </svg>
-                </span>
-              </h1>
+                  </g>
+                </svg>
+                <h1 className="gap-4 text-2xl text-shadow-md md:text-6xl xl:text-nowrap">
+                  <span className="block font-bold text-[#89ff8e] md:text-7xl">
+                    Samuel Brooke:
+                  </span>
+                  <span className="block">Freelance Web Engineer</span>
+                </h1>
+              </div>
             </div>
           </header>
         </div>

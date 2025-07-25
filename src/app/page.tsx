@@ -55,7 +55,7 @@ export default function Home() {
 
           {/* 3rd Party Integrations Block */}
           <LinksList
-            header="With Third Party Integrations..."
+            header="Third Party Integrations..."
             items={integrations}
             footer="...for full-on functionality"
           />

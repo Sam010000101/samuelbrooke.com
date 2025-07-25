@@ -50,15 +50,15 @@ export default function Footer() {
               <Avatar />
             </div>
             <Link className="w-full" href="/">
-              <p className="flex flex-col items-center text-center font-mono text-primary/80 sm:gap-2 lg:flex-row landscape:items-start landscape:text-left">
-                <span className="text-lg font-bold text-info/80">
+              <p className="flex flex-col items-center text-center font-mono sm:gap-2 lg:flex-row landscape:items-start landscape:text-left">
+                <span className="text-lg font-bold text-[#89ff8e]">
                   Samuel Brooke
                 </span>
                 <span className="hidden text-lg text-slate-400/80 lg:block">
                   {" "}
                   |{" "}
                 </span>
-                <span className="text-lg font-semibold text-info/70">
+                <span className="text-lg font-semibold text-[#89ff8e]">
                   Web Development & Design
                 </span>
                 <span className="hidden text-lg text-slate-400/80 lg:block">
@@ -72,7 +72,7 @@ export default function Footer() {
             </Link>
           </aside>
 
-          <nav className="flex flex-row gap-4 text-primary/70 lg:self-end landscape:self-end">
+          <nav className="flex flex-row gap-4 text-[#89ff8e]/70 lg:self-end landscape:self-end">
             {/* LinkedIn */}
             <a
               href="https://uk.linkedin.com/in/sam-brooke-4bb43a13"

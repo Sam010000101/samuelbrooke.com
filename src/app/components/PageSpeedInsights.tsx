@@ -75,67 +75,62 @@ export default function PageSpeedInsights() {
       duration="duration-1000"
       delay="delay-300"
     >
-      <div className="section wrapper mt-10 py-0 md:bg-primary/5 lg:py-20">
+      <div className="section wrapper flex flex-row justify-center py-0 md:bg-primary/5 lg:py-20">
         <section
           id="page-speed-insights"
-          className="container mx-auto my-10 grid w-fit grid-cols-1 gap-6 py-6 will-change-transform motion-reduce:transform-none min-[1700px]:grid-cols-[1fr_1fr] sm:h-fit"
+          className="mx-auto my-10 grid w-fit grid-cols-1 gap-6 py-6 will-change-transform motion-reduce:transform-none min-[1700px]:grid-cols-[1fr_1fr] sm:h-fit lg:mx-25"
           ref={sectionRef}
         >
           <h2
-            id="third-party-integrations"
-            className="self-center p-4 py-6 text-center font-mono text-2xl font-bold text-primary antialiased text-shadow-lg sm:pt-0 sm:pb-0 sm:text-white/60 md:text-left md:text-4xl xl:text-5xl"
+            id="page-speed-insights-heading"
+            className="self-center p-4 py-6 text-center font-mono text-2xl font-bold text-primary antialiased text-shadow-lg sm:pt-0 sm:pb-0 md:text-3xl md:text-white/75 lg:text-left lg:text-4xl xl:text-5xl"
           >
             Is your website built for the modern web?...
           </h2>
-          <div className="container mx-auto flex w-fit flex-col items-center gap-1 rounded-sm text-center font-mono text-white/70 sm:py-10">
+          <div className="container mx-auto grid w-fit grid-cols-1 items-center gap-1 rounded-sm text-center font-mono text-primary sm:py-10">
             {/* <div className="container mx-auto w-fit rounded-md border-1 border-white/5 bg-black-sabath p-4 text-center font-mono text-white"> */}
-            <div className="flex h-full w-full flex-row items-center rounded-sm border-primary/15 p-1 md:border-1 md:bg-black-sabath/50">
-              <p className="!mb-0 w-fit px-2 text-lg">
-                PageSpeed Insights Module
-              </p>
-            </div>
-            <div className="grid w-fit items-center justify-center gap-1 sm:grid-cols-2 md:py-0 lg:grid-cols-4">
+            <div className="grid w-full items-center justify-center gap-1 sm:grid-cols-2 md:py-0 lg:grid-cols-4">
               {criterion.map((crit, index) => (
                 <div
-                  className="flex flex-col items-center gap-2 rounded-sm border-1 border-primary/15 bg-black-sabath/50 p-1 text-xl lg:p-2"
+                  className="flex flex-col items-center gap-2 rounded-sm border-1 border-[#89ff8e]/5 bg-black-sabath/50 p-1 text-xl shadow-sm lg:p-2"
                   key={index}
                 >
-                  <p className="font-bold text-primary/80">{crit}</p>
+                  <p className="font-normal text-[#89ff8e]">{crit}</p>
                   <div className="flex flex-row items-center justify-center gap-2 lg:gap-4">
                     <div className="flex flex-col items-center gap-2 p-1">
-                      <p className="text-sm text-white/70">Desktop</p>
+                      <p className="text-sm text-white/50">Desktop</p>
                       <div
                         className={styles.radialProgress}
                         style={
                           {
                             "--value": desktopAnimatedValues[index],
-                            "--progress-color": "#4caf50",
-                            "--background-color": "#e0e0e0",
+                            "--progress-color": "#89ff8e",
+                            "--background-color": "transparent",
                           } as React.CSSProperties
                         }
                         aria-valuenow={desktopAnimatedValues[index]}
                         role="progressbar"
                       >
-                        <p className="text-sm">
+                        <p className="text-sm text-white/50">
                           {desktopAnimatedValues[index]}%
                         </p>
                       </div>
                     </div>
                     <div className="flex flex-col items-center gap-2 p-1">
-                      <p className="text-sm text-white/70">Mobile</p>
+                      <p className="text-sm text-white/50">Mobile</p>
                       <div
                         className={styles.radialProgress}
                         style={
                           {
                             "--value": mobileAnimatedValues[index],
-                            "--progress-color": "#4caf50",
-                            "--background-color": "#e0e0e0",
+                            "--progress-color": "#89ff8e",
+                            "--background-color": "transparent",
                           } as React.CSSProperties
                         }
                         aria-valuenow={mobileAnimatedValues[index]}
                         role="progressbar"
                       >
-                        <p className="text-sm">
+                        <p className="text-sm text-white/50">
                           {mobileAnimatedValues[index]}%
                         </p>
                       </div>
@@ -143,6 +138,11 @@ export default function PageSpeedInsights() {
                   </div>
                 </div>
               ))}
+            </div>
+            <div className="flex h-full w-full flex-row items-center justify-center rounded-sm border-[#89ff8e]/5 p-1 shadow-sm md:border-1 md:bg-black-sabath/25">
+              <p className="!mb-0 w-fit px-2 text-xl font-normal text-white/75">
+                Google PageSpeed Insights Module
+              </p>
             </div>
           </div>
         </section>

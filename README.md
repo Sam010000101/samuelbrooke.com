@@ -14,6 +14,54 @@ A "one-pager" representing Samuel Brooke, Freelance Web Designer & Developer.
 
 - serverless function to relay enquiries to my smpt email handler.
 
+## Usage
+
+Current configuration (while testing GitHub Pages & Cloudflare Pages):
+
+`npm run deploy` → deploy to GitHub Pages only
+
+`git push main` → deploy to Cloudflare Pages
+
+## Recomendations to go further with optimisation for PageSpeed Insights
+
+### ✅ Recommendations to go even further:
+
+1. Audit Largest Contentful Paint (LCP)
+
+- Run Lighthouse and check what the LCP element is.
+
+- If it's an image or heading, ensure it’s loaded early (priority, local).
+
+2. Use font-display: swap (you're already doing this via Next Fonts — great!)
+
+3. Minimize JavaScript
+
+- Consider analyzing bundle size via next build + next-analyze.
+
+4. Preload critical assets
+
+- If your SVG or hero image is critical, add:
+
+```tsx
+<link rel="preload" href="/your-image.svg" as="image" type="image/svg+xml" />
+```
+
+5. Reduce layout shifts (CLS)
+
+- Make sure image dimensions are well-defined (Next Image handles this if not using fill).
+
+## To Do
+
+1. Bugs
+
+- New component needs testing, bg animation not working on static site.
+
+2. Connect enquiry form & test
+
+3. Choose host and assign my domain name
+
+4. Test & optimise
+
 ## Built With
 
 [![Static Badge](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)

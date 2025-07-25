@@ -24,7 +24,7 @@
   inset: 0;
   border-radius: inherit;
   background:
-    radial-gradient(farthest-side, currentColor 98%, #0000) top /
+    radial-gradient(farthest-side, var(--progress-color) 98%, #0000) top /
       var(--thickness) var(--thickness) no-repeat,
     conic-gradient(currentColor var(--radialprogress), #0000 0);
   mask: radial-gradient(
@@ -46,8 +46,8 @@
   inset: 0;
   border-radius: inherit;
   background: conic-gradient(
-    var(--progress-color, #4caf50) var(--radialprogress),
-    var(--background-color, #e0e0e0) 0
+    var(--progress-color, currentColor) var(--radialprogress),
+    var(--background-color, transparent) 0
   );
   mask: radial-gradient(
     farthest-side,

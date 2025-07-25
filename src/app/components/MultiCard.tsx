@@ -9,8 +9,8 @@ export default function MultiCard() {
       delay="delay-0"
     >
       <section id="services" className="services">
-        <div id="services-header" className="">
-          <h2 className="to-info-50 container mx-auto flex h-[calc(100vh-80px)] flex-col content-center justify-center gap-4 rounded-xs bg-linear-to-t from-info/10 px-0 text-center font-mono text-4xl font-bold text-white antialiased shadow-sm text-shadow-lg sm:mt-8 sm:h-full sm:flex-row sm:bg-none sm:px-10 sm:py-4 sm:pt-2.5 sm:pb-2 sm:text-left sm:text-5xl sm:text-white/80 sm:shadow-none sm:max-md:text-4xl">
+        <div id="services-header" className="hidden sm:block">
+          <h2 className="to-info-50 container mx-auto flex h-[calc(100vh-300px)] flex-col content-center justify-center gap-4 rounded-xs bg-linear-to-t from-info/10 px-0 text-center font-mono text-4xl font-bold text-white antialiased shadow-sm text-shadow-lg sm:mt-8 sm:h-full sm:flex-row sm:bg-none sm:px-10 sm:py-4 sm:pt-2.5 sm:pb-2 sm:text-left sm:text-5xl sm:text-white/80 sm:shadow-none sm:max-md:text-4xl">
             <span
               className="flex justify-center text-7xl sm:hidden"
               aria-hidden="true"
