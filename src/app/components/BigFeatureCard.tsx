@@ -15,8 +15,8 @@ interface BigFeatureCardProps {
 }
 
 export default function BigFeatureCardIcons({
-  title = "Websites built with the latest frameworks for the modern web",
-  description = "High-performing & responsive websites fit for any device!",
+  title = "Websites built with the latest frameworks for the modern web...",
+  description = "high-performing & responsive websites fit for any device!",
   features,
 }: BigFeatureCardProps) {
   return (
@@ -35,13 +35,13 @@ export default function BigFeatureCardIcons({
             <header className="flex flex-col items-center">
               <h2
                 id="developer-tools-heading"
-                className="card-title flex flex-wrap items-center justify-center gap-4 rounded-xs text-center font-mono text-2xl font-bold text-white/80 text-shadow-lg sm:gap-2 md:text-4xl"
+                className="card-title flex flex-wrap items-center justify-center gap-4 rounded-xs text-center font-mono text-2xl font-bold text-[#89ff8e]/90 text-shadow-lg sm:gap-2 sm:text-white md:text-5xl"
               >
                 {title}
               </h2>
             </header>
 
-            <div className="mx-auto grid grid-cols-1 place-items-center items-center gap-8 text-info sm:mx-0 sm:grid-cols-4 sm:gap-4 lg:px-50 landscape:grid-cols-4">
+            <div className="mx-auto grid grid-cols-1 place-items-center items-center gap-8 text-[#673AB7] sm:mx-0 sm:grid-cols-4 sm:gap-4 lg:px-50 landscape:grid-cols-4">
               {features.map((feature) => (
                 <Link
                   href={feature.href}
@@ -71,7 +71,7 @@ export default function BigFeatureCardIcons({
             <header className="flex flex-col items-center">
               <p
                 id="technology-heading"
-                className="card-title rounded-xs bg-black-sabath/25 text-center font-mono text-2xl text-white/90 sm:text-zinc-400 lg:text-4xl"
+                className="card-title rounded-xs bg-black-sabath/25 text-center font-mono text-2xl text-[#96cd98] lg:text-4xl"
               >
                 <span className="text-xl text-shadow-lg sm:italic md:text-4xl">
                   {description}

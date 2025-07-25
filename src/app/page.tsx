@@ -57,7 +57,7 @@ export default function Home() {
           <LinksList
             header="Third Party Integrations..."
             items={integrations}
-            footer="...for full-on functionality"
+            footer="...for enhanced functionality"
           />
           {/* Page Speed Insights Block */}
           <PageSpeedInsights />

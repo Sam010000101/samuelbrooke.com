@@ -75,7 +75,7 @@ export default function PageSpeedInsights() {
       duration="duration-1000"
       delay="delay-300"
     >
-      <div className="section wrapper flex flex-row justify-center py-0 md:bg-primary/5 lg:py-20">
+      <div className="section wrapper flex flex-row justify-center py-0 md:bg-info/5 lg:py-20">
         <section
           id="page-speed-insights"
           className="mx-auto my-10 grid w-fit grid-cols-1 gap-6 py-6 will-change-transform motion-reduce:transform-none min-[1700px]:grid-cols-[1fr_1fr] sm:h-fit lg:mx-25"
@@ -83,9 +83,16 @@ export default function PageSpeedInsights() {
         >
           <h2
             id="page-speed-insights-heading"
-            className="self-center p-4 py-6 text-center font-mono text-2xl font-bold text-primary antialiased text-shadow-lg sm:pt-0 sm:pb-0 md:text-3xl md:text-white/75 lg:text-left lg:text-4xl xl:text-5xl"
+            className="self-start p-4 py-6 text-center font-mono text-2xl font-bold text-white/75 antialiased text-shadow-lg sm:pt-0 sm:pb-0 md:text-3xl lg:text-left lg:text-4xl xl:text-5xl"
           >
-            Is your website built for the modern web?...
+            <div className="flex h-full flex-col gap-10">
+              <div className="mx-2 block text-center text-5xl font-extrabold text-[#89ff8e] underline sm:mx-0 md:text-left">
+                TL;DR
+              </div>
+              <div className="block">
+                Is your website built for the modern web?...
+              </div>
+            </div>
           </h2>
           <div className="container mx-auto grid w-fit grid-cols-1 items-center gap-1 rounded-sm text-center font-mono text-primary sm:py-10">
             {/* <div className="container mx-auto w-fit rounded-md border-1 border-white/5 bg-black-sabath p-4 text-center font-mono text-white"> */}

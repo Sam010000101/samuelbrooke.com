@@ -95,7 +95,7 @@ export default function Card({
               )}
             </div>
             <div className="card-body w-full justify-center gap-2">
-              <figure className="flex h-fit flex-col items-center gap-2 text-zinc-400 sm:flex-row sm:gap-4 sm:self-start">
+              <figure className="flex h-fit flex-col items-center gap-2 text-white/80 sm:flex-row sm:gap-4 sm:self-start">
                 {/* Render the icon component if it exists */}
                 {IconComponent && (
                   <IconComponent

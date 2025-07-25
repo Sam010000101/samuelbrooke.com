@@ -60,7 +60,7 @@ export default function BigFeatureCardBtn() {
               <header className="">
                 <h2
                   id="audit-heading"
-                  className="card-title rounded-xs text-center font-mono text-3xl font-bold tracking-wide text-primary/80 sm:py-1 sm:font-black md:font-titillium md:text-4xl lg:text-6xl"
+                  className="card-title rounded-xs text-center font-mono text-3xl font-bold tracking-wide text-[#89ff8e]/80 sm:py-1 sm:font-black md:font-titillium md:text-4xl lg:text-6xl"
                 >
                   <span className="flex flex-wrap items-center justify-center gap-2">
                     <svg
@@ -99,7 +99,7 @@ export default function BigFeatureCardBtn() {
                 </p>
                 <div className="mb-3 text-center sm:mb-0 sm:w-fit">
                   <EnquiryFormButton
-                    className="btn !w-50 rounded-md border-1 text-xl opacity-75 btn-outline btn-primary hover:bg-primary/5 hover:text-primary"
+                    className="!rounded-xs !border-2 border-[#89ff8e] text-[#89ff8e] opacity-75 hover:bg-[#89ff8e]/5 hover:text-[#89ff8e]"
                     formType="audit"
                     title="Free Audit"
                     aria-label="Free Audit"

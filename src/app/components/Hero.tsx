@@ -8,7 +8,7 @@ const personSchema: WithContext<Person> = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Samuel Brooke",
-  jobTitle: "Freelance Web Designer & Developer",
+  jobTitle: "Freelance Web Engineer",
   url: "https://samuelbrooke.com",
   sameAs: [
     "https://github.com/sam010000101",
@@ -16,6 +16,15 @@ const personSchema: WithContext<Person> = {
     "https://dev.to/sambr00ke",
   ],
   knowsAbout: [
+    "Web Development",
+    "Front-end Development",
+    "Back-end Development",
+    "Full-stack Development",
+    "Software Engineering",
+    "Web Design",
+    "User Experience (UX)",
+    "User Interface (UI)",
+    "Responsive Design",
     "React",
     "Next.js",
     "TypeScript",
@@ -52,7 +61,6 @@ export default function Hero() {
           __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
         }}
       />
-
       <section
         id="hero"
         className="wrapper relative hero h-screen will-change-transform motion-reduce:transform-none"
@@ -60,27 +68,13 @@ export default function Hero() {
         {/* Background Image */}
         <div className="absolute top-0 h-screen w-full gap-0 text-shadow-md sm:gap-2">
           <Image
-            src="web-dev-background-240725.svg"
+            src="web-dev-background-250725.svg"
             alt="Background illustration showing the world"
             fill
             priority={true}
             sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 1200px) 100vw, 1200px"
             className="z-[-10] object-cover py-2"
           />
-          {/* <picture>
-            <source
-              srcSet="https://aucs.co.uk/assets/images/web-dev-background-240725_01.webp"
-              type="image/webp"
-            />
-            <img
-              src="https://aucs.co.uk/assets/images/web-dev-background-240725_01.png"
-              alt="Background illustration showing modern web design tools"
-              className="absolute inset-0 z-[-10] h-full w-full object-cover py-2"
-              loading="eager"
-              decoding="async"
-              fetchPriority="high"
-            />
-          </picture> */}
           {/* Text Block */}
           <header role="banner" className="flex h-screen flex-col">
             <div
