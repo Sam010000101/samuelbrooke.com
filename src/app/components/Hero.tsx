@@ -37,6 +37,8 @@ const personSchema: WithContext<Person> = {
     "Accessibility",
     "Performance Optimization",
     "SEO",
+    "Page Speed Insights",
+    "Web Performance",
     "Google Analytics",
     "Digital Marketing",
   ],

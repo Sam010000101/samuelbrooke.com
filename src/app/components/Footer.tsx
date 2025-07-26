@@ -12,7 +12,7 @@ const structuredData: WithContext<Service> = {
     "Free audit of your website with recommendations for improving performance, SEO, and user experience. No obligation.",
   provider: {
     "@type": "Person",
-    name: "Samuel Brooke | Freelance Web Designer & Developer",
+    name: "Samuel Brooke | Freelance Web Engineer",
     url: "https://samuelbrooke.com",
   },
   offers: {
@@ -77,6 +77,7 @@ export default function Footer() {
             <a
               href="https://uk.linkedin.com/in/sam-brooke-4bb43a13"
               target="_blank"
+              aria-label="Visit my LinkedIn page"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +90,11 @@ export default function Footer() {
               </svg>
             </a>
             {/* Github */}
-            <a href="https://github.com/sam010000101" target="_blank">
+            <a
+              href="https://github.com/sam010000101"
+              target="_blank"
+              aria-label="Visit my GitHub page"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
@@ -101,7 +106,11 @@ export default function Footer() {
               </svg>
             </a>
             {/* Dev */}
-            <a href="https://dev.to/sambr00ke" target="_blank">
+            <a
+              href="https://dev.to/sambr00ke"
+              target="_blank"
+              aria-label="Visit my Dev.to page"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"

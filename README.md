@@ -2,7 +2,7 @@
 
 ![Static Image](https://github.com/Sam010000101/samuel-brooke-website/blob/main/public/hero.png)
 
-A "one-pager" representing Samuel Brooke, Freelance Web Designer & Developer.
+A "one-pager" representing Samuel Brooke, freelance web engineer.
 
 **Why?**
 

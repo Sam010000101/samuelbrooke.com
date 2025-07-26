@@ -13,7 +13,7 @@ const siteAuditSchema: WithContext<Service> = {
     "Free audit of your website with recommendations for improving performance, SEO, and user experience. No obligation.",
   provider: {
     "@type": "Person", // or "Organization" if applicable
-    name: "Samuel Brooke | Freelance Web Designer & Developer",
+    name: "Samuel Brooke | Freelance Web Engineer",
     url: "https://samuelbrooke.com", // your real site URL
   },
   offers: {

@@ -48,7 +48,7 @@ export default function Card({
     description: description,
     provider: {
       "@type": "Organization",
-      name: "Samuel Brooke | Freelance Web Designer & Developer",
+      name: "Samuel Brooke | Freelance Web Engineer",
       url: "https://samuelbrooke.com",
     },
     areaServed: {

@@ -5,7 +5,8 @@
   name: "cyberpunk";
   default: true;
   /* --color-secondary: teal; */
-  --color-primary: rgb(255 95 55);
+  /* --color-primary: rgb(255 95 55); */
+  --color-primary: rgb(137, 255, 142);
   --color-base-100: rgb(35 30 34);
   --color-base-200: rgb(35 30 34);
   --color-base-300: rgb(35 30 34);

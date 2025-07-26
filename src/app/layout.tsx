@@ -3,9 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://samuelbrooke.com"),
-  title: "Samuel Brooke | Freelance Web Designer & Developer",
-  description:
-    "The profile page for Samuel Brooke, a freelance web designer and developer.",
+  title: "Samuel Brooke | Freelance Web Engineer",
+  description: "The profile page for Samuel Brooke, a freelance web engineer.",
   alternates: {
     canonical: "https://samuelbrooke.com",
   },

@@ -13,7 +13,7 @@ import PageSpeedInsights from "./components/PageSpeedInsights";
 const homepageSchema: WithContext<WebPage> = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "Samuel Brooke | Freelance Web Designer & Developer",
+  name: "Samuel Brooke | Freelance Web Engineer",
   url: "https://samuelbrooke.com",
   description:
     "The profile page for Samuel Brooke, a freelance web designer and developer.",
