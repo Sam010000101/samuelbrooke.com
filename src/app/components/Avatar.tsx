@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Avatar() {
   return (
     <div className="avatar">
-      <div className="w-20 rounded-xl border-1 border-[#89ff8e]/50 shadow-sm">
+      <div className="h-20 w-auto rounded-2xl border-2 border-[#89ff8e]/15 shadow-sm">
         <Image
           className=""
           src="./sb-avatar.jpg"

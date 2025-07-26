@@ -53,9 +53,7 @@ export default function LinksList({ header, items, footer }: Props) {
                 id="third-party-integrations"
                 className="py-6 text-center font-mono text-2xl font-bold antialiased text-shadow-lg sm:mb-6 sm:pt-0 sm:pb-0 sm:text-left sm:text-4xl"
               >
-                <span className="text-[#89ff8e]/90 sm:text-white">
-                  {header}
-                </span>
+                <span className="text-[#89ff8e]/90">{header}</span>
                 {footer && (
                   <span className="block w-full text-center italic sm:hidden sm:text-white/70">
                     {footer}
@@ -93,7 +91,7 @@ export default function LinksList({ header, items, footer }: Props) {
 
               {/* Footer Text */}
               {footer && (
-                <p className="hidden w-max text-center font-mono text-2xl font-bold text-white antialiased text-shadow-lg sm:mt-6 sm:block sm:pt-0 sm:text-right sm:text-4xl md:w-full">
+                <p className="hidden w-max text-center font-mono text-2xl font-bold text-[#89ff8e]/90 antialiased text-shadow-lg sm:mt-6 sm:block sm:pt-0 sm:text-right sm:text-4xl md:w-full">
                   {footer}
                 </p>
               )}

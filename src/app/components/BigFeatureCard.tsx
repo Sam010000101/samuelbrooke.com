@@ -16,7 +16,7 @@ interface BigFeatureCardProps {
 
 export default function BigFeatureCardIcons({
   title = "Websites built with the latest frameworks for the modern web...",
-  description = "high-performing & responsive websites fit for any device!",
+  description = "High-performing & responsive websites fit for any device!",
   features,
 }: BigFeatureCardProps) {
   return (
@@ -28,14 +28,14 @@ export default function BigFeatureCardIcons({
       <section
         id="developer-tools"
         aria-labelledby="developer-tools-heading"
-        className="container mx-auto grid items-center px-2 py-6 sm:mb-4 sm:h-fit"
+        className="container mx-auto grid h-dvh items-center px-2 py-6 max-[660px]:h-[750px] sm:mb-4 sm:h-fit"
       >
         <div className="card h-full p-0 py-0 sm:h-fit sm:p-[1.5rem] sm:py-8 md:card-body">
           <div className="card-body justify-center gap-6 p-0 text-neutral sm:gap-12 sm:p-1 md:p-6 landscape:gap-16">
             <header className="flex flex-col items-center">
               <h2
                 id="developer-tools-heading"
-                className="card-title flex flex-wrap items-center justify-center gap-4 rounded-xs text-center font-mono text-2xl font-bold text-[#89ff8e]/90 text-shadow-lg sm:gap-2 sm:text-white md:text-5xl"
+                className="card-title flex flex-wrap items-center justify-center gap-4 rounded-xs text-center text-2xl font-bold tracking-wider text-[#89ff8e]/90 text-shadow-lg sm:gap-2 sm:text-white md:text-5xl"
               >
                 {title}
               </h2>
@@ -58,7 +58,7 @@ export default function BigFeatureCardIcons({
                       {feature.icon}
                     </div>
                     <figcaption
-                      className="text-xl text-white/80"
+                      className="text-xl text-[#96cd98]"
                       id={`${feature.name.toLowerCase().replace(/[^a-z0-9-]/g, "")}-caption`}
                       aria-hidden="true"
                     >
@@ -71,9 +71,9 @@ export default function BigFeatureCardIcons({
             <header className="flex flex-col items-center">
               <p
                 id="technology-heading"
-                className="card-title rounded-xs bg-black-sabath/25 text-center font-mono text-2xl text-[#96cd98] lg:text-4xl"
+                className="card-title rounded-xs bg-black-sabath/25 text-center font-mono text-2xl text-zinc-300 lg:text-4xl"
               >
-                <span className="text-xl text-shadow-lg sm:italic md:text-4xl">
+                <span className="text-xl text-shadow-lg md:text-4xl">
                   {description}
                 </span>
               </p>

@@ -131,7 +131,7 @@ export default function PageSpeedInsights() {
               className="self-start p-4 py-6 text-center font-mono text-2xl font-bold text-white/75 antialiased text-shadow-lg sm:pt-0 sm:pb-0 md:text-3xl lg:text-left lg:text-4xl xl:text-5xl"
             >
               <div className="flex h-full flex-col gap-10">
-                <div className="mx-2 block text-center text-5xl font-extrabold text-[#89ff8e] underline sm:mx-0 md:text-left">
+                <div className="mx-2 block text-center text-5xl font-extrabold text-[#89ff8e]/80 underline sm:mx-0 sm:text-[#89ff8e] md:text-left">
                   TL;DR
                 </div>
                 <div className="block">

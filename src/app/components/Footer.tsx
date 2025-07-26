@@ -44,7 +44,7 @@ export default function Footer() {
         }}
       />
       <footer className="border-t-2 border-white/5">
-        <div className="bg-texture footer flex flex-col items-center justify-between px-10 pt-10 pb-7 text-base-300 sm:gap-6 sm:pt-8 md:pb-10 xl:flex-row">
+        <div className="bg-texture footer flex flex-col items-center justify-between px-4 pt-10 pb-7 text-base-300 sm:gap-6 sm:px-10 sm:pt-8 md:pb-10 xl:flex-row">
           <aside className="flex w-full flex-col items-center justify-start gap-4 sm:gap-4 lg:flex-row landscape:flex-row">
             <div className="mb-1 md:mb-4">
               <Avatar />

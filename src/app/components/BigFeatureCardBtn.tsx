@@ -90,7 +90,7 @@ export default function BigFeatureCardBtn() {
               </header>
 
               {/* Row layout: paragraph + button */}
-              <div className="flex flex-col gap-4 sm:items-center sm:justify-between sm:gap-6 md:gap-8 lg:flex-row">
+              <div className="flex flex-col gap-6 sm:items-center sm:justify-between sm:gap-6 md:gap-8 lg:flex-row">
                 <p className="text-center font-mono text-xl text-zinc-300 sm:text-xl sm:leading-relaxed md:text-left md:text-lg">
                   Want a new website, or just want to improve your existing
                   one?... I offer a free audit of your current website, with
@@ -99,7 +99,7 @@ export default function BigFeatureCardBtn() {
                 </p>
                 <div className="mb-3 text-center sm:mb-0 sm:w-fit">
                   <EnquiryFormButton
-                    className="!rounded-xs !border-2 border-[#89ff8e] text-[#89ff8e] opacity-75 hover:bg-[#89ff8e]/5 hover:text-[#89ff8e]"
+                    className="!w-[200px] !rounded-xs !border-2 border-[#89ff8e] text-[#89ff8e] hover:bg-[#89ff8e]/5 hover:text-[#89ff8e]"
                     formType="audit"
                     title="Free Audit"
                     aria-label="Free Audit"
